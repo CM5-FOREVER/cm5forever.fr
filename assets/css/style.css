@@ -199,11 +199,10 @@ hr { border-color: #e8e9ea }
 	flex-wrap: wrap;
 }
 #footer .d-flex > div {
+	min-width: 300px;
 	padding: 0 1em;
-	flex: 1 0 95%;
+	flex: 1 0;
 }
-@media (min-width: 768px) { #footer .d-flex > div { flex-basis: 45% } }
-@media (min-width: 928px) { #footer .d-flex > div { flex-basis: 30% } }
 #footer *:not(.d-flex) > div + div {
 	margin-top: 1em;
 	padding-top: 1em;
