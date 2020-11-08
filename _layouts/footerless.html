@@ -1,0 +1,30 @@
+---
+layout: bodyfull
+---
+
+<header id="header" class="{% if page.page-error %}page-error{% endif %}">
+	<div class="container-fluid mw-lg">
+		<a class="brand-title {% if page.large_logo %}large-logo{% endif %}" href="{{ '/' | relative_url }}">
+			<img src="{{ '/assets/img/logo.png' | relative_url }}" alt="CM5 FOREVER" />
+			<!-- CM5 FOREVER -->
+		</a>
+		
+		{% if page.url == "/404.html" %}
+			<ul class="links-wrap mb-0">
+				<li><a href="{{ '/' | relative_url }}">
+					&laquo; <i class="icon fas fa-home fa-fw"></i> Accueil
+				</a></li>
+			</ul>
+		{% endif %}
+		
+		<ul class="links-wrap">
+			<li><a href="{{ site.discord.link }}"><i class="icon fab fa-discord fa-fw"></i> <span class="sr-only">Discord</span></a></li>
+			<li><a href="{{ site.links.twitch }}"><i class="icon fab fa-twitch fa-fw"></i> <span class="sr-only">Twitch</span></a></li>
+			<li><a href="{{ site.links.twitter }}"><i class="icon fab fa-twitter fa-fw"></i> <span class="sr-only">Twitter</span></a></li>
+			<li><a href="{{ site.links.youtube }}"><i class="icon fab fa-youtube fa-fw"></i> <span class="sr-only">YouTube</span></a></li>
+			<li><a href="{{ site.links.facebook }}"><i class="icon fab fa-facebook-square fa-fw"></i> <span class="sr-only">Facebook</span></a></li>
+		</ul>
+	</div>
+</header>
+
+{{ content }}

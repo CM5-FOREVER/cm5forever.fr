@@ -1,0 +1,48 @@
+---
+layout: mainless
+large_logo: true
+---
+
+<div id="live" class="d-none">
+	<div id="twitch-embed"></div>
+	<script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+	<a href="{{ site.links.streamlabs }}" class="specialbar donatebar">
+		<div class="title">
+			<i class="fas fa-heart fa-fw"></i> Streamlabs
+		</div>
+		<div class="content">
+			<p>Clique ici pour nous soutenir nous en faisant un don !</p>
+		</div>
+	</a>
+</div>
+
+<div id="main">
+	<div id="countdown" data-target-time="2020-11-22T17:00:00">
+		<div class="container-fluid mw-md">
+			<h1 id="countdown-title" data-finished="Le CM5 SHOW, c'est maintenant !">Le CM5 SHOW, c'est pour bientôt !</h1>
+			<p id="countdown-field"></p>
+			
+			<div id="countdown-display" class="d-none" data-delta-time="300">
+				<div class="card">
+					<div class="card-body">
+						<h3 class="card-title">CM5 SHOW</h3>
+						<p class="card-text">
+							Prends part à l'évènement ! Rejoins-nous vite !
+						</p>
+						<p class="card-text">
+							<i class="fas fa-info-circle fa-fw"></i> Le live s'affichera sur cette page à la fin du compteur.
+						</p>
+						
+						<a href="{{ site.discord.link }}" class="btn btn-dark"><i class="fab fa-discord fa-fw"></i> Rejoins la communauté</a>
+						<a href="{{ site.links.twitter }}" class="btn btn-info"><i class="fab fa-twitter fa-fw"></i> Tiens toi au courant</a>
+					</div>
+					<div class="card-footer text-muted">
+						<span class="text text-danger"><i class="fas fa-heart fa-fw"></i></span> CM5 FOREVER
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="{{ '/assets/js/countdown.js?v=' | append: site.github.build_revision | relative_url }}"></script>
